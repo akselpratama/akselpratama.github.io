@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="">
+  
+  <title>Sanur Travel</title>
+
+  <link rel="stylesheet" href="asset/css/bootstrap.css">
+  <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+  
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+	<script type="text/javascript" src="asset/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="asset/js/jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="asset/js/jquery-ui.css">
+
+	
+	<link rel="stylesheet" type="text/css" href="asset/js/style.css">
+
+  <script src="asset/js/bootstrap.js"></script>
+  <script src="asset/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+	<script type="text/javascript">
+
+    $(function(){
+			$("#explore").dialog({
+				autoOpen:false,
+					show:'blind',
+					hide:'explode'
+			});
+			$("#jelajah").click(function(){
+				$('#explore').dialog('open');
+				return false;
+			});
+
+      $("#dialog").dialog({
+				autoOpen:false,
+					show:'blind',
+					hide:'explode'
+			});
+			$('#video').click(function(){
+				$('#dialog').dialog('open');
+				return false;
+			});
+		});
+
+  </script>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container py-3">
+      <img src="asset/image/inilogo.png" class="img-fluid" alt="">
+      <a class="navbar-brand" href="index.html" style="font-family: Verdana; color: #F2B705;"> Sanur Travel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href=""></a>
+          </li>
+        </ul>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav  mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="objekwisata.html">Objek Wisata</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav  mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="saranaakomodasi.html">Sarana dan Akomodasi</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav  mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="wawasan.html">Wawasan</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel wrapper -->
+  <div id="carousel" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-mdb-target="#carousel" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-mdb-target="#carousel" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-mdb-target="#carousel" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Inner -->
+    <div class="carousel-inner">
+      <!-- Single item -->
+      <div class="carousel-item active">
+        <img src="asset/image/pantaisanur1.jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Pantai Sanur</h5>
+          <p>Pantai Sanur adalah salah satu pantai wisata yang ada di pulau Bali. Pantai ini terletak persis di sebelah
+            timur kota Denpasar, ibu kota Bali. Sanur berada di Kotamadya Denpasar. Karena memiliki ombak yang cukup
+            tenang, maka pantai Sanur tidak bisa dipakai untuk Surfing layaknya Pantai Kuta.</p>
+          <button type="button" class="btn btn-warning" id="jelajah">Jelajah</button>
+          <button type="button" class="btn btn-warning" id="video">Video</button>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <img src="asset/image/pantaisanur2.jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Pantai Sanur</h5>
+          <p>Pantai Sanur adalah salah satu pantai wisata yang ada di pulau Bali. Pantai ini terletak persis di sebelah
+            timur kota Denpasar, ibu kota Bali. Sanur berada di Kotamadya Denpasar. Karena memiliki ombak yang cukup
+            tenang, maka pantai Sanur tidak bisa dipakai untuk Surfing layaknya Pantai Kuta.</p>
+            <button type="button" class="btn btn-warning" id="jelajah">Jelajah</button>
+            <button type="button" class="btn btn-warning" id="video">Video</button>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <img src="asset/image/pantaisanur3.jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Pantai Sanur</h5>
+          <p>Pantai Sanur adalah salah satu pantai wisata yang ada di pulau Bali. Pantai ini terletak persis di sebelah
+            timur kota Denpasar, ibu kota Bali. Sanur berada di Kotamadya Denpasar. Karena memiliki ombak yang cukup
+            tenang, maka pantai Sanur tidak bisa dipakai untuk Surfing layaknya Pantai Kuta.</p>
+            <button type="button" class="btn btn-warning" id="jelajah">Jelajah</button>
+            <button type="button" class="btn btn-warning" id="video">Video</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Inner -->
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-mdb-target="#carousel" data-mdb-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-mdb-target="#carousel" data-mdb-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+
+  <div id="dialog">
+    <h3>Video pantai Sanur</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fk-GQk5MQZQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <div id="explore">
+    <h3>Info Pantai Sanur</h3>
+    <iframe src="https://id.wikipedia.org/wiki/Pantai_Sanur" height="900" width="900" title="Information Sanur Beach"></iframe>
+  </div>
+
+  <footer class="text-center text-lg-start">
+    <div class="text-center p-3">
+      <h3><b>Objek Wisata</b></h3>
+    </div>
+  </footer>
+  <div class="container" style="background-color: #f2b705; padding: 25px; border-radius: 25px;">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="about-text">
+          <h3 style="color: white;">Pantai Karang</h3>
+          <p class="lead" style="color: white;">Pantai yang berlokasi di jalan Pantai Karang Sanur Kecamatan Denpasar Selatan, Kota Denpasar ini 
+            lokasinya berjarak 16 km dari sejumlah tempat wisata  yang ada di kabupaten Badung seperti tempat wisata
+            yang terkenal yaitu Kuta, Canggu dan Seminyak.
+            Sudah tentu pantai pantai karang yang lokasinya di Sanur Bali ini memiliki daya tarik yang membuat banyak 
+            para wisatawan domestik maupun mancanegara yang betah berlama lama menikmati pantai karang sanur 
+            ini yang memiliki pasir putih dan bersih yang dapat memanjakan mata anda saat berkunjung kesini.
+          </p>
+            <button type="button" class="btn btn-outline-dark" style=" margin-bottom: 10px;">Selengkapnya</button>
+          <h5 style="color: white; ">Ikuti kami di sosial media</h5>
+          <a href="https://web.facebook.com/" class="btn btn-sm btn-outline-dark">Facebook</a>
+          <a href="https://twitter.com/" class="btn btn-sm btn-outline-dark">Twitter</a>
+          <a href="https://www.youtube.com/" class="btn btn-sm btn-outline-dark">Youtube</a>
+        </div>
+      </div>
+      <div class="col-md-6" style="border-radius: 10px;">
+        <img src="asset/image/pantai-karang.png" width="550px" height="350px">
+      </div>
+    </div>
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-md-6" style="border-radius: 10px;">
+        <img src="asset/image/weti.png" width="550px" height="350px">
+      </div>
+      <div class="col-md-6">
+        <div class="about-text">
+          <h3 style="color: white;">Warung Nasi Bali Men Weti</h3>
+          <p style="color: white;" class="lead">Salah satu kuliner khas Bali yang berada di Sanur yang harus Anda coba ialah nasi campur, dan salah satu 
+            tempatnya yang paling legendaris ialah Nasi Bali Men Weti. Men Weti berarti Ibu Weti, 
+            ialah sang pendiri sekaligus pemilik warung ini. Warung nasi bali ini sudah ada sejak 1970 di sini, 
+            kala itu pesona wisata Sanur belum se tersohor dan se ramai saat ini.
+          </p>
+            <button type="button" class="btn btn-outline-dark" style=" margin-bottom: 10px;">Selengkapnya</button>
+          <h5 style="color: white;">Ikuti kami di sosial media</h5>
+          <a href="https://web.facebook.com/" class="btn btn-sm btn-outline-dark">Facebook</a>
+          <a href="https://twitter.com/" class="btn btn-sm btn-outline-dark">Twitter</a>
+          <a href="https://www.youtube.com/" class="btn btn-sm btn-outline-dark">Youtube</a>
+        </div>
+      </div>
+    </div>
+    <nav aria-label="Page navigation example" style="margin-top: 25px;">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <hr>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#f2b705" fill-opacity="1"
+      d="M0,96L40,106.7C80,117,160,139,240,160C320,181,400,203,480,208C560,213,640,203,720,165.3C800,128,880,64,960,74.7C1040,85,1120,171,1200,186.7C1280,203,1360,149,1400,122.7L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+    </path>
+  </svg>
+<footer class="text-white text-center" style="background-color:#f2b705;">
+    <div class="container-fluid" style="background-color:#f2b705">
+      <div class="row">
+        <div class="col-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7887.732892485912!2d115.2553154766727!3d-8.70423066969727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd241c1ce0912c1%3A0xf026af7177f0d541!2sPantai%20Sanur!5e0!3m2!1sid!2sid!4v1643383006216!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="row" style="margin-bottom: 20px;">
+            <div class="col-md-4">
+                @2022 Created By Aksel Pratama
+            </div>
+            <div class="col-md-4">
+                <ul style="text-align:left;" class="list-unstyled">
+                    <a href="#" style="text-decoration: none; color: white;"> Home</a><br>
+                    <a href="objekwisata.html" style="text-decoration: none; color: white;"> Objek Wisata</a><br>
+                    <a href="saranaakomodasi.html" style="text-decoration: none; color: white;"> Sarana dan Akomodasi</a><br>
+                    <a href="wawasan.html" style="text-decoration: none; color: white;"> Wawasan</a><br>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <p class="display-6">Sanur Travel</p>
+                <p>Percayakan perjalanan anda dengan kami</p>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
